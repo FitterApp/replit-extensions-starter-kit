@@ -22,6 +22,11 @@ The `mvt` SDK is a unified interface for extensions to interact with the platfor
 - **Endpoints**: All operations are routed through `/extension_data/:extension_slug`
 - **Query Parameters**: Advanced filtering, aggregation, grouping, and ordering are supported
 
+## Authentication
+You can use the SDK to login and logout users using the provided methods on the Movement SDK
+- `mvt.login()`: Prompts the user to login via the Movement authentication flow
+- `mvt.logout()`: Logs the current Movement user out
+
 ## SDK Structure
 
 ### Initialization
