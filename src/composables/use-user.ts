@@ -13,7 +13,7 @@ export default function useUser() {
     user.value = null
   })
 
-  const isLoggedIn = computed(() => Object.keys(user.value).length > 0)
+  const isLoggedIn = computed(() => Object.keys(user.value || {}).length > 0)
 
   return { user, isLoggedIn }
 }
